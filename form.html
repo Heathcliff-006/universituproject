@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связь со мной | Andreev A.A.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1 class="logo_title">Andreev A.A.</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="book.html">Последние прочитанные книги</a></li>
+                <li><a href="form.html">Связь со мной</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <!-- form-container — контейнер для формы -->
+            <h2>📧 Напишите мне</h2>
+            
+            <!-- form — тег формы (группирует поля для отправки на сервер) -->
+            <form>
+                <!-- Поле 1: Имя -->
+                <div class="form-field">
+                    <!-- label — подпись к полю. for="name" связывает с полем, у которого id="name" -->
+                    <label class="form-label" for="name">Ваше имя:</label>
+                    <!-- input — поле ввода. type="text" — текстовое поле -->
+                    <input class="form-input" type="text" id="name" name="name">
+                    <!-- id — уникальный идентификатор (связан с label) -->
+                    <!-- name — имя поля (отправляется на сервер) -->
+                </div>
+
+                <!-- Поле 2: Email -->
+                <div class="form-field">
+                    <label class="form-label" for="email">Ваш email:</label>
+                    <!-- type="email" — поле для ввода email (проверяет, что введён email) -->
+                    <input class="form-input" type="email" id="email" name="email">
+                </div>
+
+                <!-- Поле 3: Сообщение -->
+                <div class="form-field">
+                    <label class="form-label" for="message">Сообщение:</label>
+                    <input class="form-input" type="text" id="message" name="message">
+                </div>
+
+                <!-- Кнопки -->
+                <!-- type="submit" — кнопка отправки формы -->
+                <button class="form-button" type="submit">📤 Отправить</button>
+                <!-- type="reset" — кнопка очистки формы (сбрасывает все поля) -->
+                <button class="form-button" type="reset">🗑️ Очистить</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Andreev A.A.</p>
+    </footer>
+
+</body>
+</html>
